@@ -1,0 +1,16 @@
+appName: playframework
+
+containerPort: 9000
+
+namespace: default
+tier: springboot-backend
+
+serviceName: playframework-service
+containerName: playframework-container
+targetPort: 9000
+servicePort: 9000
+registrySecret: harbor-registry-secret
+
+image:
+  name: harbor.staging.ignite.dev/docker-images/ignitedotdev-templates/playframework-docker
+  tag: 9544646553-3
